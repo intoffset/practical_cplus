@@ -3,4 +3,4 @@
 .PHONY: clean
 
 clean:
-	find -type d -regex .*chapter[0-9]+/.* | xargs -i{} make -C {} clean
+	find -type d -regex .*chapter[0-9]+/.* | sort | xargs -i{} make -C {} clean
